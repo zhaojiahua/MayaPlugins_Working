@@ -241,21 +241,21 @@ for item in cmds.ls(sl=1):
     crvpts=[]
     if spreadAxies==0:
         alllength=(minmaxv[1]-minmaxv[0])/crvpCount
-        for i in range(crvpCount):
+        for i in range(crvpCount+1):
             fi=Decimal(minmaxv[0]+alllength*i)
             comv1=A1.mateData[0]+A1.mateData[1]*fi+A1.mateData[2]*(fi**2)+A1.mateData[3]*(fi**3)+A1.mateData[4]*(fi**4)
             comv2=A2.mateData[0]+A2.mateData[1]*fi+A2.mateData[2]*(fi**2)+A2.mateData[3]*(fi**3)+A2.mateData[4]*(fi**4)
             crvpts.append([float(fi),float(comv1),float(comv2)])
     elif spreadAxies==1:
         alllength=(minmaxv[1]-minmaxv[0])/crvpCount
-        for i in range(crvpCount):
+        for i in range(crvpCount+1):
             fi=Decimal(minmaxv[0]+alllength*i)
             comv1=A1.mateData[0]+A1.mateData[1]*fi+A1.mateData[2]*(fi**2)+A1.mateData[3]*(fi**3)+A1.mateData[4]*(fi**4)
             comv2=A2.mateData[0]+A2.mateData[1]*fi+A2.mateData[2]*(fi**2)+A2.mateData[3]*(fi**3)+A2.mateData[4]*(fi**4)
             crvpts.append([float(comv1),float(fi),float(comv2)])
     else:
         alllength=(minmaxv[1]-minmaxv[0])/crvpCount
-        for i in range(crvpCount):
+        for i in range(crvpCount+1):
             fi=Decimal(minmaxv[0]+alllength*i)
             comv1=A1.mateData[0]+A1.mateData[1]*fi+A1.mateData[2]*(fi**2)+A1.mateData[3]*(fi**3)+A1.mateData[4]*(fi**4)
             comv2=A2.mateData[0]+A2.mateData[1]*fi+A2.mateData[2]*(fi**2)+A2.mateData[3]*(fi**3)+A2.mateData[4]*(fi**4)
