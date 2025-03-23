@@ -2,3 +2,4 @@
 安装 : 将Install.py文件直接拖入Maya场景中即可(目前支持的Maya版本有2020 2022 2025)
 使用 : 选择一个或多个mesh,设置好纵向和横向段数及扩展系数,点击生成面片按钮即可生成这些mesh的代理简模(当生成简模的拓扑不理想的时候,可以适当的调整下参数重新生成);
 点击生成曲线按钮即可生成中央曲线(这些曲线描绘了这些这些mesh的大致走向);
+演示视频 https://www.bilibili.com/video/BV1zb421E7P2/?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=684e273ea5c7086aa9a8fc70bfb2f580
